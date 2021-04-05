@@ -5,7 +5,7 @@ export type OnOffPropsType = {
     // on: boolean
 }
 
-function OnOff(props: OnOffPropsType) {
+export function OnOff(props: OnOffPropsType) {
     let [on, setOn] = useState(true)
 
     const onBackgroundColor = {backgroundColor: on ? "green" : "white"}
@@ -28,4 +28,3 @@ function OnOff(props: OnOffPropsType) {
     )
 }
 
-export default OnOff

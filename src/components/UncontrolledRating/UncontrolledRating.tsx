@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 
-type RatingPropsType = {
+export type RatingPropsType = {
    // value: 0 | 1 | 2 | 3 | 4 | 5
 }
 
-function UncontrolledRating(props: RatingPropsType) {
+export function UncontrolledRating(props: RatingPropsType) {
 
     let [value, setValue] = useState(0)
         return (
@@ -27,4 +27,3 @@ function Star(props: StarType) {
     return <span onClick={()=>{props.setValue(props.value)}}>{props.selected ? <b>star </b> : "star " }</span>
 }
 
-export default UncontrolledRating
